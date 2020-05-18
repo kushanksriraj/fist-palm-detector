@@ -1,4 +1,4 @@
-# FaceMaskDetector.github.io
-Detect if the person is wearing a facemask or not.
+# Face Mask Detector
+Detect if the person is wearing a face mask or not.
 
 
