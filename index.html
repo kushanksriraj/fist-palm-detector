@@ -120,12 +120,20 @@
 
               else if (data[2].probability > .65)
                   {
-                      document.getElementById("demo").innerHTML ="Detecting...";            
+                      document.getElementById("demo").innerHTML ="Detecting...";       
+                      //---------------------------------------------------------
+                          var ele = document.getElementById("imgDiv");   
+                          ele.removeChild(ele.childNodes[0]);           
+                      //---------------------------------------------------------
                   }
               
               else
                   {
-                      document.getElementById("demo").innerHTML ="Detecting...";            
+                      document.getElementById("demo").innerHTML ="Detecting..."; 
+                      //---------------------------------------------------------
+                          var ele = document.getElementById("imgDiv");   
+                          ele.removeChild(ele.childNodes[0]);           
+                      //---------------------------------------------------------
                   }
               
             });
