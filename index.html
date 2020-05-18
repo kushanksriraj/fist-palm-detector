@@ -35,6 +35,8 @@
           
             <h1 id="demo">Initializing...</h1>
     
+            <div id="imgDiv"> </div>
+    
             
             
         </section>
@@ -76,12 +78,44 @@
               
               if (data[0].probability > .65)
                   {
-                      document.getElementById("demo").innerHTML ="Palm Detected!";            
+                      document.getElementById("demo").innerHTML ="Palm Detected!";    
+                      //---------------------------------------------------------
+                        var x = document.createElement("IMG");
+  
+                        x.setAttribute("src", "palm.jpg");
+                        x.setAttribute("width", "304");
+                        x.setAttribute("height", "228");
+                        x.setAttribute("alt", "Palm");
+  
+                        var nextImage = x;
+
+                        document.getElementById("imgDiv").appendChild(nextImage);
+
+                        var imageDiv = document.getElementById("imgDiv"); 
+  
+                        imageDiv.replaceChild(nextImage, imageDiv.childNodes[0]);
+                      //---------------------------------------------------------
                   }
               
               else if (data[1].probability > .65)
                   {
                       document.getElementById("demo").innerHTML ="Fist Detected!";            
+                      //---------------------------------------------------------
+                        var x = document.createElement("IMG");
+  
+                        x.setAttribute("src", "fist.jpg");
+                        x.setAttribute("width", "304");
+                        x.setAttribute("height", "228");
+                        x.setAttribute("alt", "Fist");
+  
+                        var nextImage = x;
+
+                        document.getElementById("imgDiv").appendChild(nextImage);
+
+                        var imageDiv = document.getElementById("imgDiv"); 
+  
+                        imageDiv.replaceChild(nextImage, imageDiv.childNodes[0]);
+                      //---------------------------------------------------------
                   }
 
               else if (data[2].probability > .65)
