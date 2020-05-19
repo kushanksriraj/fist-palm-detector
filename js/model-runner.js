@@ -29,7 +29,7 @@ export async function setupModel(URL, predictionCB) {
 // This function will run forever in a loop
 async function loop() {
     // update the webcam frame
-   // webcam.update();
+    webcam.update();
     // make a prediction using the model
     await predict();
     // then call loop again
