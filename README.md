@@ -1,9 +1,3 @@
-# Face Mask Detector
-Detect if the person is wearing a face mask or not.
+# Palm and fist detector
 
-
-
-
-
-Things to work on...
-Put an image of palm and fist.
+## Detects if a person is showing a palm or a fist in real-time.
