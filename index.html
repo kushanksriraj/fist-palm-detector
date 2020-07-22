@@ -54,15 +54,13 @@
         <footer>
             <h2>
                 
-                
             </h2>
         </footer>
 
         <script type="module">
+          
             import { setupModel } from './js/model-runner.js';
             import { setupBarGraph, updateBarGraph } from './js/bar-graph.js';
-          
-          
           
             // the below url loads the pretrained model
             let URL = 'https://teachablemachine.withgoogle.com/models/NtLxaIohm/';
@@ -118,7 +116,7 @@
                       //---------------------------------------------------------
                   }
 
-              else if (data[2].probability > .90)
+                else if (data[2].probability > .90)
                   {
                       document.getElementById("demo").innerHTML ="Detecting...";       
                       
@@ -128,8 +126,7 @@
                       
                         imageDiv.replaceChild(nextImage, imageDiv.childNodes[0]);
                       //---------------------------------------------------------
-                  }
-              
+                  }  
               else
                   {
                       document.getElementById("demo").innerHTML ="Detecting..."; 
