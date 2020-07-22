@@ -11,4 +11,5 @@ The model is run on the frames captured from the web camera. Then the model pred
 
 
 ### Further development
-Of course this is a simple model but the concept can be used to implement real world use cases like detecting lung infections from x-ray images of lungs, detecting a poacher in a reserved forest. Imagination is the limit!
+Of course this is a simple model but the concept can be used to implement real world use cases like detecting lung infections from x-ray images of lungs or detecting a poacher in a reserved forest.  
+Imagination is the limit!
